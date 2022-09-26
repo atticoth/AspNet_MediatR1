@@ -26,10 +26,10 @@ namespace AspNet_MediatR1.Controllers
             return Ok(await _repository.GetAll());
         }
 
-        [HttpGet]
+        [HttpGet("{id}")]
         public async Task<IActionResult> Get(int id)
         {
-            return Ok(_repository.Get(id));
+            return Ok(await _repository.Get(id));
         }
 
         [HttpPost]
@@ -45,6 +45,7 @@ namespace AspNet_MediatR1.Controllers
             var response = await _mediator.Send(command);
             return Ok(response);
         }
+
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
