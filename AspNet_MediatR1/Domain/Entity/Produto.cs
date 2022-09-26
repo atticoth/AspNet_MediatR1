@@ -1,4 +1,4 @@
-﻿namespace AspNet_MediatR1.Entity
+﻿namespace AspNet_MediatR1.Domain.Entity
 {
     public class Produto
     {

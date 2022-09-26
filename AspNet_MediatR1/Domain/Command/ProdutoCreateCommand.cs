@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace AspNet_MediatR1.Command
+namespace AspNet_MediatR1.Domain.Command
 {
     public class ProdutoCreateCommand : IRequest<string>
     {
